@@ -1,0 +1,22 @@
+#define _CRT_SECURE_NO_DEPRECATE
+#include <stdio.h>
+#include <math.h>
+ 
+float y(float x);
+ 
+int main(void){
+ float x;
+ printf("Enter a value of x: ");
+ scanf("%f", &x);
+ printf("f(%f) = %f",x,y(x));
+ 
+ 
+return 0;
+}
+float y(float x){   
+	float a,b,result;
+	a = 2.2;
+    b = 7.4;
+    result = b*x - exp(-a*pow(x,2));
+    return result;                  // return statement
+}
