@@ -14,8 +14,8 @@ int main(void){
 return 0;
 }
 float y(float x){   
-	float a,b,result;
-	a = 2.2;
+    float a,b,result;
+    a = 2.2;
     b = 7.4;
     result = b*x - exp(-a*pow(x,2));
     return result;                  // return statement
